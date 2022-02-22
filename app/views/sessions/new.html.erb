@@ -1,1 +1,40 @@
-<h1>You have reached the login page</h1>
+<div class="ui one column stackable center aligned page grid">
+  <div class="column sixteen wide">
+    <h1>Welcome to MessageMe - a complete Chat App</h1>
+    <i class="circular segment raised power off orange icon huge"></i>
+    <h2>Log in to continue</h2>
+  </div>
+</div>
+<div class="ui placeholder segment">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+      <div class="ui form">
+        <div class="field">
+          <label>Username</label>
+          <div class="ui left icon input">
+            <input type="text" placeholder="Username">
+            <i class="user icon"></i>
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="ui left icon input">
+            <input type="password">
+            <i class="lock icon"></i>
+          </div>
+        </div>
+          <%#= link_to 'Log in', root_path, class: 'ui orange submit button'%>
+        <button class="ui button orange" type="submit">Log in</button>
+      </div>
+    </div>
+    <div class="middle aligned column">
+      <div class="ui big button orange">
+        <i class="signup icon"></i>
+        Sign Up
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical divider">
+    OR
+  </div>
+</div>
