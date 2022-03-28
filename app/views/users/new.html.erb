@@ -2,13 +2,13 @@
   <div class="column sixteen wide">
     <h1>Welcome to MessageMe - a complete Chat App</h1>
     <i class="circular segment raised power off orange icon huge"></i>
-    <h2>Log in to continue</h2>
+    <h2>Create User Account</h2>
   </div>
 </div>
 <div class="ui placeholder segment">
-  <div class="ui two column very relaxed stackable grid">
+  <div class="ui very relaxed stackable grid">
     <div class="column">
-      <%= form_for(:session, html: { class: "ui form" }, url: login_path) do |f| %>
+      <%= form_for(:user, html: { class: "ui form" }, url: signup_path) do |f| %>
         <div class="field">
           <%= f.label 'Username' %>
           <div class="ui left icon input">
@@ -23,17 +23,8 @@
             <i class="lock icon"></i>
           </div>
         </div>
-        <%= f.button 'Log in', class: 'ui orange submit button' %>
+        <%= f.button 'Register', class: 'ui orange submit button' %>
       <% end %>
     </div>
-    <div class="middle aligned column">
-      <div class="ui big button orange">
-        <i class="signup icon"></i>
-        <%= link_to 'Sign up', signup_path %>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical divider">
-    OR
   </div>
 </div>
